@@ -13,6 +13,9 @@ LanguageString languageString = LanguageBuilder.language(LanguageBuilder.identif
 LanguageString languageString = LanguageBuilder.language(LanguageBuilder.identifier(this, "hi-user"));
 ```
 
+```
+Send
+```
 > // Send
 ```java
 LanguageString languageString = LanguageBuilder.language(LanguageBuilder.identifier(this, "hi-user"))
