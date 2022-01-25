@@ -8,8 +8,9 @@ LanguageString languageString = LanguageBuilder.language(LanguageBuilder.identif
                 .build();
 ```
 
+##
+
 If the multi-language message does not exist it will create one with that identifier.
-#
 ```java
 LanguageString languageString = LanguageBuilder.language(LanguageBuilder.identifier(this, "hi-user"));
 ```
