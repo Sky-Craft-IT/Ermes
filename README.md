@@ -2,7 +2,7 @@
 
 > // Create
 ```java
-LanguageString languageString = LanguageBuilder.language(LanguageBuilder.identifier(this, "no-player"))
+LanguageString languageString = LanguageBuilder.language(LanguageBuilder.identifier(this, "hi-user"))
                 .set(Language.ITALIAN, "Ciao %value%, come stai?")
                 .set(Language.ENGLISH, "Hi %value%, how are you?")
                 .build();
@@ -10,12 +10,12 @@ LanguageString languageString = LanguageBuilder.language(LanguageBuilder.identif
 
 > // Get
 ```java
-LanguageString languageString = LanguageBuilder.language(LanguageBuilder.identifier(this, "no-player"));
+LanguageString languageString = LanguageBuilder.language(LanguageBuilder.identifier(this, "hi-user"));
 ```
 
 > // Send
 ```java
-LanguageString languageString = LanguageBuilder.language(LanguageBuilder.identifier(this, "no-player"))
+LanguageString languageString = LanguageBuilder.language(LanguageBuilder.identifier(this, "hi-user"))
                 .replace("%value%", "zHeroandre")
                 .send(player);
 ```
