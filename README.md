@@ -2,9 +2,9 @@
 
 ##
 
-Example to create a multi-language message. 
+Example to create a multi-language message. <br />
 Use the `build()` method only if you want to cache the message, if you don't use it you won't be able to get this message anymore.
-{: style="text-align: center"}
+
 ```java
 LanguageString languageString = LanguageBuilder.language(LanguageBuilder.identifier(this, "hi-user"))
                 .set(Language.ITALIAN, "Ciao %value%, come stai?")
@@ -14,6 +14,7 @@ LanguageString languageString = LanguageBuilder.language(LanguageBuilder.identif
 
 ##
 
+Example to take a multi-language message. <br />
 If the multi-language message does not exist it will create one with that identifier.
 ```java
 LanguageString languageString = LanguageBuilder.language(LanguageBuilder.identifier(this, "hi-user"));
@@ -21,7 +22,8 @@ LanguageString languageString = LanguageBuilder.language(LanguageBuilder.identif
 
 ##
 
-// Send
+Example of how to send a multi-language message. <br />
+You will be able to send messages to players via the `send(?)` method by passing them the parameter.
 ```java
 LanguageString languageString = LanguageBuilder.language(LanguageBuilder.identifier(this, "hi-user"))
                 .replace("%value%", "zHeroandre")
