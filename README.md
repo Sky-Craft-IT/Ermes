@@ -1,6 +1,5 @@
 ## MULTI-LANGUAGE SYSTEM  (SPIGOT & VELOCITY)
 
-Create
 Use the `build()` method only if you want to cache the message, if you don't use it you won't be able to get this message anymore.
 ```java
 LanguageString languageString = LanguageBuilder.language(LanguageBuilder.identifier(this, "hi-user"))
@@ -9,7 +8,7 @@ LanguageString languageString = LanguageBuilder.language(LanguageBuilder.identif
                 .build();
 ```
 
-// Get
+If the multi-language message does not exist it will create one with that identifier.
 ```java
 LanguageString languageString = LanguageBuilder.language(LanguageBuilder.identifier(this, "hi-user"));
 ```
