@@ -1,5 +1,5 @@
 ## MULTI-LANGUAGE SYSTEM
-<center>Centered text</center>
+
 > // Create
 ```java
 LanguageString languageString = LanguageBuilder.language(LanguageBuilder.identifier(this, "no-player"))
