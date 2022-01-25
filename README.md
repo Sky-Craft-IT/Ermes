@@ -1,6 +1,6 @@
 ## MULTI-LANGUAGE SYSTEM  (SPIGOT & VELOCITY)
 
-// Create
+// Create `help()`
 ```java
 LanguageString languageString = LanguageBuilder.language(LanguageBuilder.identifier(this, "hi-user"))
                 .set(Language.ITALIAN, "Ciao %value%, come stai?")
