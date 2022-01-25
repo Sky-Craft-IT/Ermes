@@ -23,7 +23,7 @@ LanguageString languageString = LanguageBuilder.language(LanguageBuilder.identif
 ##
 
 Example of how to send a multi-language message. <br />
-You will be able to send messages to players via the `send(?)` method by passing them the parameter.
+You will be able to send messages to players via the `send()` method by passing them the parameter.
 ```java
 LanguageString languageString = LanguageBuilder.language(LanguageBuilder.identifier(this, "hi-user"))
                 .replace("%value%", "zHeroandre")
