@@ -1,6 +1,6 @@
 ## MULTI-LANGUAGE SYSTEM  (SPIGOT & VELOCITY)
 
-> // Create
+// Create
 ```java
 LanguageString languageString = LanguageBuilder.language(LanguageBuilder.identifier(this, "hi-user"))
                 .set(Language.ITALIAN, "Ciao %value%, come stai?")
@@ -8,15 +8,12 @@ LanguageString languageString = LanguageBuilder.language(LanguageBuilder.identif
                 .build();
 ```
 
-> // Get
+// Get
 ```java
 LanguageString languageString = LanguageBuilder.language(LanguageBuilder.identifier(this, "hi-user"));
 ```
 
-```
-Send
-```
-> // Send
+// Send
 ```java
 LanguageString languageString = LanguageBuilder.language(LanguageBuilder.identifier(this, "hi-user"))
                 .replace("%value%", "zHeroandre")
