@@ -2,7 +2,39 @@
 
 ##
 
+Example...
+
+```java
+public enum HandlerType implements me.zheroandre.ermes.common.abstraction.interfacing.handler.HandlerType {
+    USER
+}
+```
+
 ##
+
+Example...
+
+```java
+public class UserHandler extends Handler<UUID, User> {
+    
+}
+```
+
+##
+
+Example...
+
+```java
+General.register(HandlerType.USER, new UserHandler());
+```
+
+##
+
+Example...
+
+```java
+UserHandler userHandler = (UserHandler) General.get(HandlerType.USER);
+```
 
 ##
 
