@@ -22,6 +22,18 @@ public class UserHandler extends Handler<UUID, User> {
 
 Example...
 ```java
+public class UserHandler extends Handler<UUID, User> implements Gettable<UUID, User> {
+    @Override
+    public User get(UUID key) {
+        return null;
+    }
+}
+```
+
+##
+
+Example...
+```java
 public class UserHandler extends Handler<UUID, User> implements Loadable<UUID, User> {
     @Override
     public void load(UUID key) {
