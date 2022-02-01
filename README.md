@@ -61,8 +61,6 @@ Example...
 UserHandler userHandler = (UserHandler) General.get(HandlerType.USER);
 ```
 
-##
-
 ----
 
 ##
