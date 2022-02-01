@@ -24,11 +24,6 @@ Example...
 ```java
 public class UserHandler extends Handler<UUID, User> implements Loadable<UUID, User> {
     @Override
-    public User get(UUID key) {
-        return null;
-    }
-
-    @Override
     public void load(UUID key) {
         //
     }
