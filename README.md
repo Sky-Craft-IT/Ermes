@@ -3,7 +3,6 @@
 ##
 
 Example...
-
 ```java
 public enum HandlerType implements me.zheroandre.ermes.common.abstraction.interfacing.handler.HandlerType {
     USER
@@ -13,7 +12,6 @@ public enum HandlerType implements me.zheroandre.ermes.common.abstraction.interf
 ##
 
 Example...
-
 ```java
 public class UserHandler extends Handler<UUID, User> {
     
@@ -23,7 +21,28 @@ public class UserHandler extends Handler<UUID, User> {
 ##
 
 Example...
+```java
+public class UserHandler extends Handler<UUID, User> implements Loadable<UUID, User> {
+    @Override
+    public User get(UUID key) {
+        return null;
+    }
 
+    @Override
+    public void load(UUID key) {
+        //
+    }
+
+    @Override
+    public void unload(UUID key) {
+        //
+    }
+}
+```
+
+##
+
+Example...
 ```java
 General.register(HandlerType.USER, new UserHandler());
 ```
@@ -31,7 +50,6 @@ General.register(HandlerType.USER, new UserHandler());
 ##
 
 Example...
-
 ```java
 UserHandler userHandler = (UserHandler) General.get(HandlerType.USER);
 ```
@@ -48,7 +66,6 @@ UserHandler userHandler = (UserHandler) General.get(HandlerType.USER);
 
 Example to create a multi-language message. <br />
 Use the `build()` method only if you want to cache the message, if you don't use it you won't be able to get this message anymore.
-
 ```java
 LanguageString message = LanguageBuilder.language(LanguageBuilder.identifier(ErmesMain, "hi-user"))
                 .set(Language.ITALIAN, "Ciao %value%, come stai?")
